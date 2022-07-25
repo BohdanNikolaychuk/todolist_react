@@ -61,7 +61,7 @@ function App() {
 
     <div className="App"   style={{
       backgroundColor: isActive ? `#${color}` : '',
-      color: isActive ? 'white' : '',
+      color: isActive ? 'white' : 'black',
     }}
      >
       <button className='btn__show' onClick={showing}>{show
