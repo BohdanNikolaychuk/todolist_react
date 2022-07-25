@@ -1,6 +1,111 @@
-.App{
+*,
+html {
+	box-sizing: border-box;
+
+	padding: 0;
+	margin: 0;
+}
+
+
+.App {
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+
+.btn__show{
+	width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+	margin-bottom: 30px;
+}
+
+.btn__add{
+	width: 100px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+label{
+	display: flex;
+
+
+}
+
+.input{
+	width: 100%;
+	border: 0;
+	border-bottom: 2px solid gray;
+	outline: 0;
+	font-size: 1.3rem;
+	color: white;
+	padding: 7px 0;
+	background: transparent;
+	transition: border-color 0.2s;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	width: 100%;
+	border: 0;
+	border-bottom: 2px solid gray;
+	outline: 0;
+	font-size: 1.3rem;
+	color: white;
+	padding: 7px 0;
+	background: transparent;
+	transition: border-color 0.2s;
+}
+
+.delete {
+	color: red;
+	cursor: pointer;
+
+}
+
+input:checked+span {
+	text-decoration: line-through;
+}
+
+
+
+.item-enter {
+	opacity: 0;
+}
+
+.item-enter-active {
+	opacity: 1;
+	transition: opacity 500ms ease-in;
+}
+
+.item-exit {
+	opacity: 1;
+}
+
+.item-exit-active {
+	opacity: 0;
+	transition: opacity 500ms ease-in;
 }
